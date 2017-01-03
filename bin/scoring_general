@@ -1,0 +1,4 @@
+./scoring endpoints --findingsLOEL ../data/$1 --endpoints ../data/$2 --output ../data/$1_endpoints
+./scoring pktransform --findingsLOEL ../data/$1_endpoints --output ../data/$1_endpoints_pk
+./scoring chart --pks ../data/$1_endpoints_pk
+

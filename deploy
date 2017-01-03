@@ -1,4 +1,0 @@
-cp -R target/universal/scoring-1.1/* /opt/deploy/scoring-1.1
-cp scoring_script* /opt/deploy/scoring-1.1/bin
-cp -R data /opt/deploy/scoring-1.1
-

@@ -1,4 +1,0 @@
-# dog
-./scoring endpoints --findingsLOEL ../data/0_HistopathologicalFinding_liver_TR_LOEL_dog.tsv --endpoints ../data/endpoints.tsv --output ../data/0_HistopathologicalFinding_liver_TR_LOEL_endpoints_dog.tsv
-./scoring pktransform --findingsLOEL ../data/0_HistopathologicalFinding_liver_TR_LOEL_endpoints_dog.tsv --output ../data/0_HistopathologicalFinding_liver_TR_LOEL_endpoints_pk_dog.tsv
-./scoring chart --pks ../data/0_HistopathologicalFinding_liver_TR_LOEL_endpoints_pk_dog.tsv
