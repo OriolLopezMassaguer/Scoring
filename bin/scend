@@ -1,0 +1,24 @@
+#/bin/bash
+f1=$1
+filename1="${f1%.*}"
+extension1="${f1##*.}"
+if [[ $1 != *"."* ]]
+then
+  extension1=""
+else
+ extension1="."$extension1
+fi
+
+f2=$2
+
+output1=$filename1"_endpoints"$extension1
+output2=$filename1"_endpoints_pk"$extension1
+
+$SCORING_HOME/scoring endpoints --findingsLOEL $f1 --endpoints $f2 --output $output1
+$SCORING_HOME/scoring pktransform --endpointsLOEL $output1 --output $output2
+if [ "$3" = "-chart" ]; then
+  $SCORING_HOME/scoring chart --pks $output2 > /dev/null
+fi
+
+
+
