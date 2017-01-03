@@ -1,0 +1,4 @@
+# Rat
+./scoring endpoints --findingsLOEL ../data/0_HistopathologicalFinding_liver_TR_LOEL_rat.tsv --endpoints ../data/endpoints.tsv --output ../data/0_HistopathologicalFinding_liver_TR_LOEL_endpoints_rat.tsv
+./scoring pktransform --findingsLOEL ../data/0_HistopathologicalFinding_liver_TR_LOEL_endpoints_rat.tsv --output ../data/0_HistopathologicalFinding_liver_TR_LOEL_endpoints_pk_rat.tsv
+./scoring chart --pks ../data/0_HistopathologicalFinding_liver_TR_LOEL_endpoints_pk_rat.tsv
