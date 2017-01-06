@@ -14,7 +14,7 @@ case class ConfigScoring(
 object CommandLineParser {
 
   val parser = new scopt.OptionParser[ConfigScoring]("Scoring") {
-    head("Scoring", "v1.4")
+    head("Scoring", "v1.4.1")
 
     cmd("endpoints") action { (_, c) =>
       c.copy(command = "computeendpoints")

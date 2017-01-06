@@ -157,7 +157,7 @@ object Scoring {
     def showStatisticsForField(field: String) = {
       val values = data.projectField_list(field).map(_.toDouble)
       val positives = values.filter(_ > 0.0)
-      val res @ (min, max, positivescnt, positivepct, average) = (round(positives.min), round(positives.max), positives.size, round(100.0 * (positives.size.toDouble / values.size.toDouble), 3), round(positives.sum / data.size))
+      val res @ (min, max, positivescnt, positivepct, average) = (round(positives.min), round(positives.max), positives.size, round(100.0 * (positives.size.toDouble / values.size.toDouble), 3), round(positives.sum / positives.size))
 
       println(s"$field: $positivescnt positive ($positivepct%), $min min, $max max, average $average")
     }

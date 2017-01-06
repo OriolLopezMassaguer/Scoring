@@ -1,6 +1,6 @@
 name := """scoring"""
 
-version := "1.4"
+version := "1.4.1"
 
 scalaVersion := "2.11.8"
 
