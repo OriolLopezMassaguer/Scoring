@@ -1,0 +1,17 @@
+# DEG
+
+./scoring endpoints --findingsLOEL ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL.tsv --endpoints ../data/DEG.tsv --output ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_DEG.tsv
+./scoring pktransform --findingsLOEL ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_DEG.tsv --output ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_DEG.tsv
+./scoring chart --pks ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_DEG.tsv
+
+# INF
+
+./scoring endpoints --findingsLOEL ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL.tsv --endpoints ../data/INF.tsv --output ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_DEG.tsv
+./scoring pktransform --findingsLOEL ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_INF.tsv --output ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_INF.tsv
+./scoring chart --pks ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_endpoints.tsv
+
+# PRO
+
+./scoring endpoints --findingsLOEL ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL.tsv --endpoints ../data/PRO.tsv --output ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_DEG.tsv
+./scoring pktransform --findingsLOEL ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_PRO.tsv --output ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_PRO.tsv
+./scoring chart --pks ../data/HistopathologicalFinding_Rat_Oral_all_periods_pivoted_liver_TR_LOEL_PRO.tsv
